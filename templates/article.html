@@ -15,8 +15,26 @@
 {% block content %}
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                                                  title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
+
+            <h2 class="post_title post_detail" style="color: #1a1a1a"><a href="{{ SITEURL }}/{{ article.url }}"
+                                                                         rel="bookmark"
+                                                                         title="Permalink to {{ article.title }}">{{ article.title }}</a>
+            </h2>
+
+            <span class="post_date">{{ article.locale_date }}</span>
+
+            {% if article.title_image %}
+                <img alt="{{ article.title }}" src="{{ article.title_image }}" width=100%" style="max-width:1363px">
+            {% endif %}
+            <br>
+
+            {% if article.gitrepo %}
+                <span class="grey-tags">
+                <a class="grey-tags" href="{{ article.gitrepo }}"> View on GitHub
+                    <img src="./../images/gitlogo.png" height="20px" width="20px"> </a>
+                </span>
+            {% endif %}
+
             <div class="entry-content blog-post">
                 {{ article.content }}
             </div>

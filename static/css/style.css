@@ -1,13 +1,16 @@
-html { 
-  font-family: 'Open Sans', 'helvetica', sans-serif;
-  background: white;
-  font-size: 14px;
+html {
+  /*font-family: 'Open Sans', 'helvetica', sans-serif;*/
+  /*font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; */
+  	font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+
+  background: #FFFFFF;
+  font-size: 18px;
 }
 
 /* Titles */
 h1 { text-transform: uppercase }
-h1, h2 { 
-	font-weight: normal; 
+h1, h2 {
+	font-weight: normal;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -252,3 +255,8 @@ aside > h2 {
 img {
   max-width: 100%;
 }
+
+a.grey-tags {
+    color: rgba(87, 98, 98, 1); text-decoration:none; }
+}
+
