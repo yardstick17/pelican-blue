@@ -4,7 +4,8 @@
     {% block head %}
         <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>{% block title %} {{ SITENAME }} | {{ SIDEBAR_DIGEST }} {% endblock %}</title>
+
+        <title> <a href="{{ SITEURL }} "> {% block title %} {{ SITENAME }} | {{ SIDEBAR_DIGEST }} {% endblock %} </a>  </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{{ AUTHOR_DESCRIPTION }}">
         <meta name="author" content="{{ AUTHOR }}">
@@ -113,10 +114,6 @@
         </ul>
     {% endif %}
 
-    <!-- Place this tag where you want the button to render. -->
-    <a class="github-button" href="https://github.com/yardstick17" aria-label="Follow @yardstick17 on GitHub">Follow
-        @yardstick17</a>
-
     {% if LINKS %}
         <h2 class="blog_roll_link"><br/>BLOGROLLS</h2>
         <ul class="navbar">
@@ -125,6 +122,11 @@
             {% endfor %}
         </ul>
     {% endif %}
+    <span>
+        <a class="github-button" href="https://github.com/yardstick17"
+           aria-label="Follow @yardstick17 on GitHub">Follow @yardstick17</a>
+    </span>
+
 
 </aside>
 

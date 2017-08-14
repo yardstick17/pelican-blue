@@ -41,8 +41,8 @@ h1, h2 {
 
 .entry-content
 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: justify;
   color: #333;
 }
@@ -125,7 +125,7 @@ aside {
   color: white;
   box-shadow: 0 0 3px black;
   text-align: center;
-  padding-top: 8%;
+  padding-top: 5%;
   background-size: cover;
 }
 
@@ -157,14 +157,12 @@ aside > h2 {
   box-shadow: 0px 0px 5px 3px white;
 }
 
-.social
-{
+.social {
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
-.nav
-{
+.nav {
   display: block;
   margin-left: -30px;
   margin-right: -30px;
@@ -172,44 +170,38 @@ aside > h2 {
   margin-top: 40px;
 }
 
-.nav > ul > li
-{
+.nav > ul > li {
   font-size: 15px;
 }
 
-.nav a
-{
+.nav a {
     color: #fff;
     text-decoration: none;
     transition: all .3s ease-in-out;
 }
 
-.nav a:hover
-{
+.nav a:hover {
     background-color: #328cc7;
 }
 
-.list-bare
-{
+.list-bare {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.nav__link 
-{
+.nav__link {
   display: block;
   padding: 0.77273rem 0;
   border-bottom: 1px solid #328cc7;
 }
 
 
-.blog_roll_link 
-{
+.blog_roll_link {
   display: block;
   padding: 0.33147rem 0;
   border-bottom: 3px solid #328cc7;
-} 
+}
 
 
 /*--------Responsive------------*/
